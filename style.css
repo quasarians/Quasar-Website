@@ -497,7 +497,6 @@ content>p {
 /* 3. Sector Card Styles */
 .sectors {
     background-color: var(--sector-color);
-    padding: 1.5rem;
 }
 
 .card-wrapper {

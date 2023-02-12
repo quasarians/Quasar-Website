@@ -282,6 +282,8 @@ section#count {
     .mytp {
         width: 300px;
         height: 300px;
+        position:relative;
+        left: -5%;
     }
 
     #clock {
@@ -319,12 +321,62 @@ section#count {
         flex-direction: column;
     }
     .sponser_contact,.poc_wrap,.social{
-        /* background-color: #313131; */
         width: 100%;
+    }
+    .sponser_contact{
+        flex-basis: 0;
+    }
+
+    /* !Phase Styles */
+    .phase-sub {
+        font-size: 0.6rem;
+        font-weight: 800;
+    }
+
+}
+
+@media (max-width:420px){
+    .mytp {
+        width: 200px;
+        height: 200px;
+        left:1%;
+    }
+
+    .count-item {
+        font-size: 1.1rem;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    @keyframes circle {
+        0% {
+            transform: rotate(0deg) translate(-100px) rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(360deg) translate(-100px) rotate(-360deg);
+        }
+    }
+
+    section#count{
+        top: 25%;
+        left:-5%;
+    }
+    .sponser_contact,.poc_wrap,.social{
+        width: 100%;
+    }
+    .sponser_contact{
+        flex-basis: 0;
     }
 
 
 }
+
+
 
 /* Clock CSS End */
 
@@ -355,9 +407,7 @@ section#count {
 
 /* Quasar Info Styles */
 .about-info {
-    /* background-color: burlywood; */
     display: flex;
-    /* align-items:center; */
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1.5rem 0;
@@ -399,15 +449,12 @@ content>p {
 }
 
 .register {
-    /* background: linear-gradient(65deg, var(--pumpkin) 0, var(--amber) 50%);
-    border: none;
-    padding: 0.5em 1em;
-    transition: 1s all ease-in-out; */
     background:linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);;
     padding: 0.5em 1em;
     text-decoration: none;
     width: 150px;
     transition: .5s all ease-in-out;
+    border: none;
 }
 
 .register:hover {
@@ -438,6 +485,12 @@ content>p {
 
 .event-item>img {
     box-shadow: 10px 10px 21px solid var(--pumpkin);
+}
+
+.sub{
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 100;
 }
 
 
@@ -484,13 +537,15 @@ content>p {
     opacity: 0;
     transition: 0.6s all ease-out;
     padding: 5px 0;
+    font-size: 0.85rem;
 }
 
 .sector_cards:hover .sector_body{
-    height:auto;
+    height:100%;
     bottom: 0;
-    background-color: rgb(0,0,0,0.6);
+    background-color: rgb(0,0,0,0.7);
 }
+
 .sector_cards:hover p{
     visibility: visible;
     opacity: 1;
@@ -503,7 +558,11 @@ content>p {
 .sector_body>h1,
 h3 {
     font-family: 'Orienta', sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
+}
+.short{
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 
@@ -530,8 +589,11 @@ h3 {
 }
 
 .phase-sub {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800;
+}
+.phase-date{
+    font-size: 0.8rem;
 }
 
 .phase {

@@ -303,6 +303,9 @@ section#count {
         font-size: 0.6rem;
         font-weight: 800;
     }
+    .phase-date {
+        font-size: 0.8rem;
+    }
 
 }
 

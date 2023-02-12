@@ -1,5 +1,5 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -45,32 +45,14 @@ h2 {
     --amber: #fbbb00ff;
     --black: #111111;
 
-    --about-color:#111111;
-    --prizes-color:#252525;
-    --sector-color:#2c2c2c;
-    --schedule-color:#0f0f0f;
-    --contact-color:#000;
+    --about-color: #111111;
+    --prizes-color: #252525;
+    --sector-color: #2c2c2c;
+    --schedule-color: #0f0f0f;
+    --contact-color: #000;
 
 
 }
-
-/* Scrollbars */
-::-webkit-scrollbars {
-    width: 1em;
-}
-
-::-webkit-scrollbars-track {
-    background: linear-gradient(white, gray, 50%);
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    opacity: 0.7;
-}
-
 
 /* Nav Bar Styles */
 header {
@@ -101,21 +83,6 @@ img#nav-logo {
     align-items: center;
     white-space: nowrap;
 }
-
-.stick{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    padding: 0.5rem;
-    background: #ffffff;
-    box-shadow: 0 0 2rem 0 rgb(0,0,0,0.3);
-    z-index: 99;
-}
-.stick>nav>ul>li>a{
-    color: #000000;
-}
-
 
 .nav-links {
     display: flex;
@@ -160,7 +127,7 @@ li {
 
 .main-page {
     /* background-color: #1b1b1b; */
-     /* to satisfy navbar fixed ; this is the height of nav*/
+    /* to satisfy navbar fixed ; this is the height of nav*/
     /* margin-top: 5rem; */
     background: url(images/bg_draft.png) no-repeat;
     background-position: 50% 50%;
@@ -282,7 +249,7 @@ section#count {
     .mytp {
         width: 300px;
         height: 300px;
-        position:relative;
+        position: relative;
         left: -5%;
     }
 
@@ -320,10 +287,14 @@ section#count {
     .about-info {
         flex-direction: column;
     }
-    .sponser_contact,.poc_wrap,.social{
+
+    .sponser_contact,
+    .poc_wrap,
+    .social {
         width: 100%;
     }
-    .sponser_contact{
+
+    .sponser_contact {
         flex-basis: 0;
     }
 
@@ -335,11 +306,11 @@ section#count {
 
 }
 
-@media (max-width:420px){
+@media (max-width:420px) {
     .mytp {
         width: 200px;
         height: 200px;
-        left:1%;
+        left: 1%;
     }
 
     .count-item {
@@ -362,17 +333,24 @@ section#count {
         }
     }
 
-    section#count{
+    section#count {
         top: 25%;
-        left:-5%;
+        left: -5%;
     }
-    .sponser_contact,.poc_wrap,.social{
+
+    .sponser_contact,
+    .poc_wrap,
+    .social {
         width: 100%;
     }
-    .sponser_contact{
+
+    .sponser_contact {
         flex-basis: 0;
     }
 
+    .phase-date {
+        font-size: 1rem;
+    }
 
 }
 
@@ -424,7 +402,6 @@ section#count {
     border-left: 8px solid var(--pumpkin);
     border-radius: 0 6px 6px 0;
     padding: 12px;
-    /* width: 80%; */
 }
 
 .up {
@@ -449,7 +426,8 @@ content>p {
 }
 
 .register {
-    background:linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);;
+    background: linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);
+    ;
     padding: 0.5em 1em;
     text-decoration: none;
     width: 150px;
@@ -458,18 +436,13 @@ content>p {
 }
 
 .register:hover {
-    /* background: linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.7); */
     color: rgb(255, 255, 255);
     letter-spacing: .04em;
     background: linear-gradient(75deg, var(--amber) 0, var(--pumpkin) 80%);
-    box-shadow: 0 0 2px  var(--pumpkin), 0 0 6px  var(--amber), 0 0 10px var(--pumpkin);
+    box-shadow: 0 0 2px var(--pumpkin), 0 0 6px var(--amber), 0 0 10px var(--pumpkin);
 }
 
-
-
 /* End of About Info */
-
 
 
 /* 3. Prizes Styles */
@@ -487,16 +460,18 @@ content>p {
     box-shadow: 10px 10px 21px solid var(--pumpkin);
 }
 
-.sub{
+.sub {
+    text-align: center;
     letter-spacing: 2px;
     font-size: 1.1rem;
-    font-weight: 100;
+    margin-top: 1rem;
 }
 
 
 /* 3. Sector Card Styles */
 .sectors {
     background-color: var(--sector-color);
+    padding: 1.5rem 0;
 }
 
 .card-wrapper {
@@ -515,15 +490,17 @@ content>p {
 .sector_cards {
     border-width: 0px;
     overflow: hidden;
-    transition: 1s all ease-in-out;
     height: auto;
+    transition: 0.5s all ease-in-out;
 }
-.sector_cards:hover{
+
+.sector_cards:hover {
     cursor: pointer;
-    box-shadow: 0 0 2rem 0 rgb(0,0,0,0.3);
+    box-shadow: 0 0 5px  var(--about-color), 0 0 10px  var(--sector-color), 0 0 15px var(--sector-color);
 }
+
 .sector_body {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     height: 60px;
     /* hover */
@@ -531,25 +508,30 @@ content>p {
     bottom: 0px;
     transition: 0.7s all ease-in-out;
 }
-.sector_body >p{
+
+.sector_body>p {
     visibility: hidden;
     opacity: 0;
     transition: 0.6s all ease-out;
     padding: 5px 0;
     font-size: 0.85rem;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
 }
 
-.sector_cards:hover .sector_body{
-    height:100%;
+.sector_cards:hover .sector_body {
+    height: 100%;
     bottom: 0;
-    background-color: rgb(0,0,0,0.7);
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
-.sector_cards:hover p{
+.sector_cards:hover p {
     visibility: visible;
     opacity: 1;
 }
-.sector_cards:hover .my-card-img{
+
+.sector_cards:hover .my-card-img {
     transform: scale(1.1);
 }
 
@@ -557,9 +539,9 @@ content>p {
 .sector_body>h1,
 h3 {
     font-family: 'Orienta', sans-serif;
-    /* font-weight: 500; */
 }
-.short{
+
+.short {
     font-size: 1.2rem;
     text-align: center;
 }
@@ -591,8 +573,9 @@ h3 {
     font-size: 1rem;
     font-weight: 800;
 }
-.phase-date{
-    font-size: 0.8rem;
+
+.phase-date {
+    font-size: 1rem;
 }
 
 .phase {
@@ -620,7 +603,7 @@ h3 {
 .contact-page {
     display: flex;
     align-items: stretch;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
@@ -628,12 +611,14 @@ h3 {
     padding: 1.5rem;
     /* background-color: aqua; */
 }
-.sponser_contact{
+
+.sponser_contact {
     /* background-color: #313131; */
-    flex-basis:35%;
+    flex-basis: 35%;
     flex-grow: 0;
 }
-.collab{
+
+.collab {
     font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
@@ -648,8 +633,6 @@ h3 {
 .social-links {
     display: flex;
 }
-
-
 
 
 /* Footer */

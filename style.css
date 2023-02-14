@@ -572,10 +572,10 @@ h3 {
 
 
 /*! Schedule Card Styles */
-.col-lg-6 {
+/* .col-lg-6 {
     display: flex;
     padding: 0 1rem 0 0;
-}
+} */
 .row{
     padding: 1.2rem 0;
     display: flex;

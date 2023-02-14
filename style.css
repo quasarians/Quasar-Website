@@ -310,6 +310,21 @@ section#count {
         font-size: 0.8rem;
     }
 
+    /* Phase Cards */
+    .phase-text{
+        /* mobile */
+        font-size: 0.8rem; 
+    }
+    .test{
+        /* mobile */
+        font-size: 1.1rem;
+        color: red;
+    }
+    .phase-date{
+        /* mobile */
+        font-size: 0.8rem;
+    }
+
 }
 
 @media (max-width:420px) {
@@ -354,9 +369,6 @@ section#count {
         flex-basis: 0;
     }
 
-    .phase-date {
-        font-size: 0.8rem;
-    }
 
 }
 
@@ -560,17 +572,26 @@ h3 {
 
 
 /*! Schedule Card Styles */
-
-.card{
-    border-width: 0;
-    background: linear-gradient(75deg, var(--pumpkin) 0, var(--amber) 50%);
-    opacity: 0.7;
+.col-lg-6 {
+    display: flex;
+    padding: 0 1rem 0 0;
+}
+.row{
+    padding: 1.2rem 0;
+    display: flex;
+}
+.phase_cards{
+    border-width: 2px;
     color: #fff;
+    background: linear-gradient(-90deg, var(--prizes-color) 0, var(--contact-color) 50%);
     cursor: pointer;
-    box-shadow: 0 0 5px  var(--about-color), 0 0 10px  var(--sector-color), 0 0 15px var(--sector-color);
+    transition: 0.3s all ease-in-out;
+    border-radius: 0.8rem;   
 }
 .card:hover{
     opacity: 1;
+    box-shadow: 0 0 5px  var(--about-color), 0 0 10px  var(--sector-color);
+    transform: translateY(-3px);
 }
 
 .schedule {
@@ -579,7 +600,7 @@ h3 {
 }
 
 .schedule-wrapper {
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 1.5rem; */
     display: flex;
     justify-content: center;
 }
@@ -588,13 +609,37 @@ h3 {
     font-weight: 600 !important;
 }
 
-.phase-sub {
-    font-size: 1rem;
-    font-weight: 800;
+
+/* Testing */
+.phase-text{
+    font-size: 1.8rem;
+}
+.test{
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
-.phase-date {
+.phase-date{
     font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: #6d6d6d;
+}
+.phase-para{
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+    /* mobile */
+    font-size: 0.8rem;
+}
+
+.phase-para:hover{
+    opacity: 1;
+}
+
+
+.phase-sub {
+    font-size: 0.9rem;
+    font-weight: 800;
 }
 
 .phase {

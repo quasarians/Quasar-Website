@@ -309,26 +309,14 @@ section#count {
     .phase_wrapper_one{
         flex-direction: column;
     }
-    .phase-sub {
-        font-size: 0.6rem;
-        font-weight: 800;
-    }
     .phase-date {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
-
-    /* Phase Cards */
     .phase-text{
-        /* mobile */
-        font-size: 0.8rem; 
+        font-size: 1.1rem !important; 
     }
     .test{
-        /* mobile */
-        font-size: 1.1rem;
-    }
-    .phase-date{
-        /* mobile */
-        font-size: 0.8rem;
+        font-size: 0.9rem !important;
     }
 
 }

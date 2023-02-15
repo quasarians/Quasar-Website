@@ -687,3 +687,9 @@ footer {
     text-align: center;
     font-size: 12px;
 }
+
+.csection_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

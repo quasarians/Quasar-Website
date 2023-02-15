@@ -43,21 +43,9 @@ var x = setInterval(function () {
 }, 1000);
 
 
-function count(){
-        const elc = document.getElementById("counter-wrapper");
-        var counter = localStorage.getItem("view");
-        if(counter==null){
-                counter=1;
-                localStorage.setItem("view",1);
-        }
-        else
-        {
-                counter = Number(counter)+1;
-                localStorage.setItem("view",counter);
-        }
-        console.log("This is counter "+counter+" that is it");
-        elc.innerHTML = counter;
-}
+function websiteVisits(response) {
+        document.querySelector("#visits").textContent = response.value;
+    }
 
 // Clock JS End
 

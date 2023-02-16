@@ -629,6 +629,40 @@ h3 {
 
 /* Schedule Card End */
 
+/* Sponsers Section */
+.sponsors{
+    background: #0c0c0c;
+}
+
+.sponsor_cards{
+    padding: 1rem 0;
+}
+
+.sponsor_logo{
+    width:20%;
+    transition: 0.4s all ease-in-out;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card_dark{
+    background-color: #6d6d6d;
+}
+.sponsor_logo:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px  var(--about-color), 0 0 10px  var(--sector-color), 0 0 15px var(--sector-color);
+    
+}
+
+.s_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    /* background-color: #cece; */
+}
+
 
 /* Contact Us */
 .contact {

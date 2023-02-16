@@ -483,17 +483,12 @@ content>p {
 /* 3. Sector Card Styles */
 .sectors {
     background-color: var(--sector-color);
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
-.card-wrapper {
-    padding: 1.5rem 0;
+.mycard{
+    padding: 1rem;
 }
-
-.mycard {
-    margin-bottom: 10%;
-}
-
 .my-card-img {
     height: 250px;
     transition: 0.7s all ease-in-out;
@@ -512,7 +507,7 @@ content>p {
 }
 
 .sector_body {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     height: 60px;
     /* hover */
@@ -535,7 +530,7 @@ content>p {
 .sector_cards:hover .sector_body {
     height: 100%;
     bottom: 0;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 .sector_cards:hover p {
@@ -560,8 +555,6 @@ h3 {
 
 
 
-
-
 /* Sector Card End */
 
 
@@ -583,6 +576,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 1rem 0;
 }
 
 .phase_card{
@@ -670,26 +664,43 @@ h3 {
     font-size: 2rem;
     padding: 0 1rem;
 }
+.sc-icon:hover{
+    color: #fff;
+}
 
 .social-links {
     display: flex;
 }
 
+.maps{
+    text-decoration: none;
+    color: #fff;
+}
+.maps:hover{
+    color:var(--amber);
+}
 
 /* Footer */
 footer {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: #000;
     height: 20px;
-    background: linear-gradient(65deg, var(--pumpkin) 0, var(--amber) 50%);
 }
 
 .footer>p {
     text-align: center;
     font-size: 12px;
+    width: 100%;
 }
 
 .csection_wrapper{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.visitor{
+    font-size: 1.2rem;
 }

@@ -318,6 +318,10 @@ section#count {
     .test{
         font-size: 0.9rem !important;
     }
+    
+        .sponsor_logo{
+        width: 40% !important;
+    }
 
 }
 

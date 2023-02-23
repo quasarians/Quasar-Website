@@ -291,6 +291,10 @@ section#count {
     .short {
         font-size: 1.1rem !important;
     }
+    
+    .sector_body>p {
+        font-size: 0.75rem !important;
+    }
 
     /* !About-Info Styles */
     .about-info {

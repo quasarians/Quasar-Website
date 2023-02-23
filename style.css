@@ -129,7 +129,7 @@ li {
 /* 1. Hero Section Styles Here */
 
 .main-page {
-    background: url(images/bg_draft.png) no-repeat;
+    background: url(images/bg_draft.webp) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     font-family: 'Orienta', sans-serif;

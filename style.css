@@ -752,3 +752,16 @@ footer {
 .visitor{
     font-size: 1.2rem;
 }
+
+
+
+
+.fixed{
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    top: 85%;
+    left: 85%;
+    border-radius: 5px;
+    z-index: 1000;
+}

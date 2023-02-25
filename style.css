@@ -328,6 +328,10 @@ section#count {
     .sponsor_logo{
         width: 40% !important;
     }
+    
+    .s_images > img{
+        width: 200px;
+    }
 
 }
 

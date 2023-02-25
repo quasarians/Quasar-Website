@@ -765,3 +765,15 @@ footer {
     border-radius: 5px;
     z-index: 1000;
 }
+
+@media(max-width:768px){
+    .fixed{
+        left:65%;
+    }
+}
+
+@media (max-width:420px){
+    .fixed{
+        left:40%;
+    }
+}

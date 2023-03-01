@@ -336,7 +336,11 @@ section#count {
 
 }
 
-@media (max-width:420px) {
+@media (max-width:480px) {
+      .sector_body>p {
+        font-size: 0.7rem !important;
+    }
+    
     .mytp {
         width: 200px;
         height: 200px;

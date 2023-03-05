@@ -134,29 +134,46 @@ li {
 
 /* 1. Hero Section Styles Here */
 
-
 /* Devfolio Custom Button */
-#devfolio {
-    background-color: #3f3f3f;
-    padding: 7px 25px 7px 20px;
-    border-radius: 3.5px;
-    font-weight: 400;
-}
-.button {
-    color: #fff;
+
+.devfolio_button {
     text-decoration: none;
 }
-.button--flex {
-    display: inline-flex;
+a > button#apply-button {
+    font-family: Nunito Sans,sans-serif;
     align-items: center;
-    column-gap: .5rem;
-}
-.dev_logo {
-    max-width: 100%;
-    height: auto;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 44px;
+    justify-content: center;
+    outline: none;
+    padding: 0 32px;
+    transition: all .3s ease-in 0s;
+    white-space: nowrap;
 }
 
-/* End of Devfolio Button */
+a > button#apply-button:hover{
+    box-shadow: 0 0 5px  var(--about-color), 0 0 10px  var(--sector-color), 0 0 15px var(--sector-color);
+    letter-spacing: 0.2px;
+}
+
+button.dark-inverted {
+    color: #27333f;
+    background-color: #fff;
+}
+
+button.dark-inverted svg {
+    fill: #27333f;
+}
+.dev_logo {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+/* End of Devfolio Custom Button */
 
 .main-page {
     background: url(images/bg_draft.webp) no-repeat;
@@ -178,7 +195,7 @@ li {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 4.5px;
     font-weight: 800;
 }
 

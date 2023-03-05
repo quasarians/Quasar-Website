@@ -8,6 +8,10 @@
 html {
     scroll-behavior: smooth;
 }
+::selection{
+    background-color: var(--pumpkin);
+    color:#fff;
+}
 
 /* Fonts */
 body {
@@ -23,6 +27,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+ 
 
 .gradient2 {
     font-weight: 600;
@@ -129,6 +134,30 @@ li {
 
 /* 1. Hero Section Styles Here */
 
+
+/* Devfolio Custom Button */
+#devfolio {
+    background-color: #3f3f3f;
+    padding: 7px 25px 7px 20px;
+    border-radius: 3.5px;
+    font-weight: 400;
+}
+.button {
+    color: #fff;
+    text-decoration: none;
+}
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+.dev_logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* End of Devfolio Button */
+
 .main-page {
     background: url(images/bg_draft.webp) no-repeat;
     background-position: 50% 50%;
@@ -141,7 +170,6 @@ li {
 #hero-image {
     width: 100%;
 }
-
 
 
 .hero-left {
@@ -511,14 +539,15 @@ content>p {
 }
 .my-card-img {
     height: 250px;
-    transition: 0.7s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
 .sector_cards {
     border-width: 0px;
+    border-radius:0;
     overflow: hidden;
     height: auto;
-    transition: 0.5s all ease-in-out;
+    transition: 0.7s all ease-in-out;
 }
 
 .sector_cards:hover {

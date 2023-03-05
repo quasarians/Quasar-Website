@@ -50,6 +50,9 @@ function websiteVisits(response) {
 // Clock JS End
 
 
+
+// TimeLine JS
+
 var items = document.querySelectorAll(".timeline li");
 
 function isElementInViewport(el) {
@@ -77,6 +80,8 @@ function callbackFunc() {
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
+
+// Cursor JS
 
 class ArrowPointer {
   constructor() {
@@ -211,6 +216,9 @@ class ArrowPointer {
   }
 })();
 
+
+// Preloader JS
+
 window.onload = function () {
   setTimeout(function () {
     // animations
@@ -228,6 +236,7 @@ window.onload = function () {
   }, 1500);
 };
 
+// Read More
 function read_more() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");

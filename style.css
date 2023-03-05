@@ -330,7 +330,7 @@ section#count {
         width: 40% !important;
     }
     
-    .s_images > img{
+    .s_images > a >img{
         width: 170px;
     }
 
@@ -662,12 +662,13 @@ h3 {
     align-items: center;
 }
 
-.s_images>img:hover{
+/* Sponsor Links */
+.s_images > a > img:hover{
     transform: translateY(-3px);
     box-shadow: 0 0 5px  var(--about-color), 0 0 10px  var(--sector-color), 0 0 15px var(--sector-color);
     cursor: pointer;   
 }
-.s_images > img{
+.s_images > a >img{
     width: 150px;
     background-color: white;
     border-radius: 10px;

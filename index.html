@@ -25,188 +25,197 @@
 
 
 <body>
-  
-    <div class="body" id="block1">
+
+  <div class="body" id="block1">
     <div class="loadingWrap">
       <svg class="loading" viewBox="0 0 84.6 84.6">
         <defs>
           <filter id="stickyFilter">
             <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="filter" />
-            <feComposite in="SourceGraphic" in2="filter" operator="atop"/>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+              result="filter" />
+            <feComposite in="SourceGraphic" in2="filter" operator="atop" />
           </filter>
-          <linearGradient id="gradient" class="gradient" x1="0%" y1="0%" x2="0%" y2="40%" gradientTransform="rotate(45)">
-            <stop offset="0%"/>
-            <stop offset="100%"/>
+          <linearGradient id="gradient" class="gradient" x1="0%" y1="0%" x2="0%" y2="40%"
+            gradientTransform="rotate(45)">
+            <stop offset="0%" />
+            <stop offset="100%" />
           </linearGradient>
         </defs>
         <clipPath id="clip">
-          <circle cx="42.3" cy="42.3" r="41.6"/>
+          <circle cx="42.3" cy="42.3" r="41.6" />
         </clipPath>
         <g clip-path="url(#clip)">
-          <path class="background" d="M0 0h84.6v84.6H0z"/>
+          <path class="background" d="M0 0h84.6v84.6H0z" />
           <g class="exhaust">
-            <path class="gradientBox" d="M2.37244 65.5981l28.84968-28.84968 16.54614 16.54614-28.84968 28.84968z"/>
-            <path class="gradientBox" d="M6.35189 69.55189l28.84968-28.84968 8.34378 8.34378-28.84968 28.84968z"/>
+            <path class="gradientBox" d="M2.37244 65.5981l28.84968-28.84968 16.54614 16.54614-28.84968 28.84968z" />
+            <path class="gradientBox" d="M6.35189 69.55189l28.84968-28.84968 8.34378 8.34378-28.84968 28.84968z" />
             <g class="filteredGroup">
-              <path class="line1 line lineThick" d="M47.7 49.6L13.4 83.9"/>
-              <path class="line2 line lineThick" d="M42.3 42.3L8 76.6"/>
-              <path class="line3 line lineThick" d="M33.5 38.5L-.8 72.8"/>
-  
-              <path class="line4 line lineDots"  d="M45 45.82L10.7 80.12"/>
-              <path class="line5 line lineDots" d="M38.16 40.06L3.86 74.36"/>
-  
-              <path class="line6 line lineStatic" d="M39.46 41.15L18.91 61.7"/>
-              <path class="line7 line lineStatic" d="M43.57 43.77L23.02 64.32"/>
+              <path class="line1 line lineThick" d="M47.7 49.6L13.4 83.9" />
+              <path class="line2 line lineThick" d="M42.3 42.3L8 76.6" />
+              <path class="line3 line lineThick" d="M33.5 38.5L-.8 72.8" />
+
+              <path class="line4 line lineDots" d="M45 45.82L10.7 80.12" />
+              <path class="line5 line lineDots" d="M38.16 40.06L3.86 74.36" />
+
+              <path class="line6 line lineStatic" d="M39.46 41.15L18.91 61.7" />
+              <path class="line7 line lineStatic" d="M43.57 43.77L23.02 64.32" />
             </g>
           </g>
           <g class="rotate">
             <g class="rumble">
-              <path class="arrow" d="M60.8 27.2c.6-2.1-1.3-4-3.4-3.4L19.5 35.3c-2.2.7-2.6 3.6-.8 4.9l15.8 7.6c1.1.5 2 1.4 2.5 2.6L44.4 66c1.3 1.9 4.2 1.4 4.9-.8l11.5-38z"/>
+              <path class="arrow"
+                d="M60.8 27.2c.6-2.1-1.3-4-3.4-3.4L19.5 35.3c-2.2.7-2.6 3.6-.8 4.9l15.8 7.6c1.1.5 2 1.4 2.5 2.6L44.4 66c1.3 1.9 4.2 1.4 4.9-.8l11.5-38z" />
             </g>
           </g>
         </g>
       </svg>
       <div class="label">Entering into the space....</div>
     </div>
-   </div>
-  
+  </div>
+
   <div id="block2" style="display: none;">
 
-  <header class="main-header" id="head">
-    <nav class="nav container" id="navBar">
-      <div class="logo">
-        <a href="#" class="navbar-brand"><img id="nav-logo" src="images/main-logo-only.png" alt="Quasar Logo"></a>
-        <h1 class="logo-type gradient">Quasar</h1>
-      </div>
+    <header class="main-header" id="head">
+      <nav class="nav container" id="navBar">
+        <div class="logo">
+          <a href="#" class="navbar-brand"><img id="nav-logo" src="images/main-logo-only.png" alt="Quasar Logo"></a>
+          <h1 class="logo-type gradient">Quasar</h1>
+        </div>
 
 
-      <ul class="nav-links" id="navLinks">
-        <li class="nav-item"><a href="#toHome">Home</a> </li>
-        <li class="nav-item"><a href="#toAbout">About</a> </li>
-        <li class="nav-item"><a href="#toTimeline">Timeline</a> </li>
-        <li class="nav-item"><a href="#toSectors">Sectors</a> </li>
-        <li class="nav-item"><a href="#toSchedule">Schedule</a> </li>
-        <li class="nav-item"><a href="#toSponsors">Sponsors</a> </li>
-        <li class="nav-item"><a href="#toContact">Contact</a> </li>
-        <!-- <li class="nav-item"><a class="nav-btn" href="#home">Register!</a> </li> -->
-      </ul>
-      <li class="hamburger"><a class="ham-icon" id="ham" href="#home"><i id="hamInner" class="fas fa-bars"></i></a></li>
-    </nav>
-  </header>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#toHome">Home</a> </li>
+          <li class="nav-item"><a href="#toAbout">About</a> </li>
+          <li class="nav-item"><a href="#toTimeline">Timeline</a> </li>
+          <li class="nav-item"><a href="#toSectors">Sectors</a> </li>
+          <li class="nav-item"><a href="#toSchedule">Schedule</a> </li>
+          <li class="nav-item"><a href="#toSponsors">Sponsors</a> </li>
+          <li class="nav-item"><a href="#toContact">Contact</a> </li>
+          <!-- <li class="nav-item"><a class="nav-btn" href="#home">Register!</a> </li> -->
+        </ul>
+        <li class="hamburger"><a class="ham-icon" id="ham" href="#home"><i id="hamInner" class="fas fa-bars"></i></a>
+        </li>
+      </nav>
+    </header>
 
-  <!-- Main Page - Anubhav -->
-  <main class="main-page pad" id="toHome">
-    <div class="container row landing-page">
-      <div class="col-lg-6 md-12 sm-12 hero-left">
-        <!-- Left Text -->
-        <img id="hero-image" src="images/main-logo.png">
-        <p class="hero-subtitle"><span class="gradient">"</span> HACK THE SPACE <span class="gradient">"</span></p>
-       
-         <div class="event-reg para">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAH5vSNWfzZ9DYtlOKH4BI8iKyCPqTECe_UFp97sfI5twuRQ/viewform" target="_blank"><button class="register">Register Now</button></a>
-    </div>
-      </div>
+    <!-- Main Page - Anubhav -->
+    <main class="main-page pad" id="toHome">
+      <div class="container row landing-page">
+        <div class="col-lg-6 md-12 sm-12 hero-left">
+          <!-- Left Text -->
+          <img id="hero-image" src="images/main-logo.png">
+          <p class="hero-subtitle"><span class="gradient">"</span> HACK THE SPACE <span class="gradient">"</span></p>
 
-      <div class="col-lg-6 md-12 sm-12 hero-right">
-        <!-- Circle Timer -->
+          <div class="event-reg para">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAH5vSNWfzZ9DYtlOKH4BI8iKyCPqTECe_UFp97sfI5twuRQ/viewform"
+              target="_blank"><button class="register">Register Now</button></a>
+          </div>
+        </div>
 
-        <div class="mytp">
-          <div class="circle"></div>
+        <div class="col-lg-6 md-12 sm-12 hero-right">
+          <!-- Circle Timer -->
 
-          <section id="count">
-            <div class="count-wrapper text-center">
-              <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
-                <div id="clock" class="time-count">
-                  <div class="count-item-main" style="margin-left: 10%">
-                    <p class="count-item gradient" id="count-days">%d</p>
-                    <p class="count-item">D</p>
-                  </div>
-                  <div class="count-item-main">
-                    <p class="count-item gradient" id="count-hours">%h</p>
-                    <p class="count-item">H</p>
-                  </div>
-                  <div class="count-item-main">
-                    <p class="count-item gradient" id="count-mins">%m</p>
-                    <p class="count-item">M</p>
-                  </div>
-                  <div class="count-item-main">
-                    <p class="count-item gradient" id="count-sec">%s</p>
-                    <p class="count-item">S</p>
+          <div class="mytp">
+            <div class="circle"></div>
+
+            <section id="count">
+              <div class="count-wrapper text-center">
+                <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
+                  <div id="clock" class="time-count">
+                    <div class="count-item-main" style="margin-left: 10%">
+                      <p class="count-item gradient" id="count-days">%d</p>
+                      <p class="count-item">D</p>
+                    </div>
+                    <div class="count-item-main">
+                      <p class="count-item gradient" id="count-hours">%h</p>
+                      <p class="count-item">H</p>
+                    </div>
+                    <div class="count-item-main">
+                      <p class="count-item gradient" id="count-mins">%m</p>
+                      <p class="count-item">M</p>
+                    </div>
+                    <div class="count-item-main">
+                      <p class="count-item gradient" id="count-sec">%s</p>
+                      <p class="count-item">S</p>
+                    </div>
                   </div>
                 </div>
               </div>
+            </section>
+          </div>
+
+        </div>
+      </div>
+      <!-- end of Hero -->
+    </main>
+
+    <!-- About Page  -->
+    <section class="about" id="toAbout">
+      <div class="row container about-page">
+        <h1 class="header gradient2 ">About Quasar</h1>
+        <p class="about-text para">
+          <span class="gradient">Quasar</span> is the flagship annual <span class="gradient">24-hour</span> hackathon
+          organized by <span class="gradient">
+            Vasantdada Patil Pratishthan's College of
+            Engineering & Visual Arts
+          </span> wherein young innovators and developers from all over the country come together to
+          find alarming problems in various sectors and brainstorm their
+          solutions to said problems and showcase their true potential to the alarming problems of the region & the
+          world.
+          It is completely
+          organized by a team of dedicated students and also consists of a series of workshops and other fun activities
+          to
+          make the stay memorable.
+          <br>
+          <br>
+          We are excited to announce our upcoming first rendition of Quasar to be in a hybrid mode, designed for
+          beginners
+          with a passion for
+          innovation and sustainability. Our event will feature multiple themes, allowing participants to submit their
+          ideas in the given PPT format
+          and showcase their creativity offline in VPPCOE&VA.
+        </p>
+        <!-- Event Info -->
+
+        <div class="about-info">
+          <div class="info-cards">
+            <div class="content">
+              <p class="up">Date:</p>
+              <p>25th - 26th March, 2023</p>
             </div>
-          </section>
+          </div>
+          <div class="info-cards">
+            <div class="content">
+              <p class="up">Prizes</p>
+              <p>Prize Pool worth 60k & more!</p>
+            </div>
+          </div>
+          <div class="info-cards">
+            <div class="content">
+              <p class="up">Team Size</p>
+              <p>1 to 4 members</p>
+            </div>
+          </div>
         </div>
 
-      </div>
-    </div>
-    <!-- end of Hero -->
-  </main>
-
-  <!-- About Page  -->
-  <section class="about" id="toAbout">
-    <div class="row container about-page">
-      <h1 class="header gradient2 ">About Quasar</h1>
-      <p class="about-text para">
-        <span class="gradient">Quasar</span> is the flagship annual <span class="gradient">24-hour</span> hackathon
-        organized by <span class="gradient">
-          Vasantdada Patil Pratishthan's College of
-          Engineering & Visual Arts
-        </span> wherein young innovators and developers from all over the country come together to
-        find alarming problems in various sectors and brainstorm their
-        solutions to said problems and showcase their true potential to the alarming problems of the region & the world.
-        It is completely
-        organized by a team of dedicated students and also consists of a series of workshops and other fun activities to
-        make the stay memorable.
+        <div class="event-reg">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAH5vSNWfzZ9DYtlOKH4BI8iKyCPqTECe_UFp97sfI5twuRQ/viewform"><button
+              class="register" target="_blank">Register Now</button></a>
+          <p class="reg-para para">Registration for Quasar is free!</p>
+        </div>
         <br>
-        <br>
-        We are excited to announce our upcoming first rendition of Quasar to be in a hybrid mode, designed for beginners
-        with a passion for
-        innovation and sustainability. Our event will feature multiple themes, allowing participants to submit their
-        ideas in the given PPT format
-        and showcase their creativity offline in VPPCOE&VA.
-      </p>
-      <!-- Event Info -->
-
-      <div class="about-info">
-        <div class="info-cards">
-          <div class="content">
-            <p class="up">Date:</p>
-            <p>25th - 26th March, 2023</p>
-          </div>
-        </div>
-        <div class="info-cards">
-          <div class="content">
-            <p class="up">Prizes</p>
-            <p>Prize Pool worth 60k & more!</p>
-          </div>
-        </div>
-        <div class="info-cards">
-          <div class="content">
-            <p class="up">Team Size</p>
-            <p>1 to 4 members</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="event-reg">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAH5vSNWfzZ9DYtlOKH4BI8iKyCPqTECe_UFp97sfI5twuRQ/viewform"><button class="register" target="_blank">Register Now</button></a>
-        <p class="reg-para para">Registration for Quasar is free!</p>
-      </div>
-      <br>
-      <p class="text-center para my-5">
-         Registration closes on 12th March, 2023.<br>
+        <p class="text-center para my-5">
+          Registration closes on 12th March, 2023.<br>
           Hackathon begins on 25th March, 2023.</p>
-      
-      
-      
-      
-    </div>
-  </section>
 
-<!--   <section class="prizes" id="toPrizes">
+
+
+
+      </div>
+    </section>
+
+    <!--   <section class="prizes" id="toPrizes">
     <div class="container prizes-page">
       <h1 class="header gradient2">Prizes & Awards</h1>
       <div class="prizes-text">
@@ -250,324 +259,353 @@
   </section>
 
  -->
-  
-  <section class="timeline roadmap" id="toTimeline">
-    <h1 class="header gradient2">Timeline</h1>
-    <ul>
-      <li>
-        <div>
-          <time>12th March</time>
-          <div class="discovery">
-            <h5 class="text">Registration Ends</h5>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div>
-          <time>18th March</time>
-          <div class="discovery">
-            <h5 class="text">Results of Round-1</h5>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div>
-          <time>25th March</time>
-          <div class="discovery">
-            <h5 class="text">Hackathon Round-2 <br>Start at 2 P.M.</h5>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div>
-          <time>26th March</time>
-          <div class="discovery">
-            <h5 class="text">Hackathon Round-2 <br>End at 2 P.M.</h5>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div>
-          <time>26th March</time>
-          <div class="discovery">
-            <h5 class="text">Business Model Pitching & Prize Distribution</h5>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
 
-  <!-- Sector Card -->
-  <section class="sectors" id="toSectors">
-    <div class="container sector-page">
-      <h1 class="header gradient2">Sectors</h1>
-      <div class="sector-text">
-        <p class="about-text para">
-          "It is where we showcase the unique aspect of Quasar. Unlike other hackathons, we do not limit you to
-          specific
-          domains. Instead, we offer four main sectors for you to choose from, providing you the freedom to explore and
-          specialize in any domain within the sector that interests you. This approach reflects the current needs and
-          advancements in technology and provides a platform for you to showcase your skills and innovate solutions to
-          real-world problems."
+    <section class="timeline roadmap" id="toTimeline">
+      <h1 class="header gradient2">Timeline</h1>
+      <ul>
+        <li>
+          <div>
+            <time>12th March</time>
+            <div class="discovery">
+              <h5 class="text">Registration Ends</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>18th March</time>
+            <div class="discovery">
+              <h5 class="text">Results of Round-1</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>25th March</time>
+            <div class="discovery">
+              <h5 class="text">Hackathon Round-2 <br>Start at 2 P.M.</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>26th March</time>
+            <div class="discovery">
+              <h5 class="text">Hackathon Round-2 <br>End at 2 P.M.</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>26th March</time>
+            <div class="discovery">
+              <h5 class="text">Business Model Pitching & Prize Distribution</h5>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sector Card -->
+    <section class="sectors" id="toSectors">
+      <div class="container sector-page">
+        <h1 class="header gradient2">Sectors</h1>
+        <div class="sector-text">
+          <p class="about-text para">
+            "It is where we showcase the unique aspect of Quasar. Unlike other hackathons, we do not limit you to
+            specific
+            domains. Instead, we offer four main sectors for you to choose from, providing you the freedom to explore
+            and
+            specialize in any domain within the sector that interests you. This approach reflects the current needs and
+            advancements in technology and provides a platform for you to showcase your skills and innovate solutions to
+            real-world problems."
+          </p>
+        </div>
+        <div class="card-wrapper row">
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/edu.jpg" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">Smart Education</h3>
+                <p>“This sector provides an opportunity for you to explore innovative solutions for the education
+                  industry, from improving access to quality education for all, to developing cutting-edge educational
+                  technologies."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/agri.png" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">Agriculture/Rural Development</h3>
+                <p>"Whether you're interested in creating tools for better crop management or finding ways to increase
+                  access to markets for small-scale farmers, this sector offers a wide range of possibilities for you to
+                  showcase your skills and make a positive impact on the world."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-wrapper row">
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/biotech.jpg" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">MediTech/BioTech</h3>
+                <p>“Whether you're interested in using AI for disease diagnosis or creating wearable devices for
+                  monitoring health, the possibilities for innovation in this sector are endless."</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 sm-12 mycard">
+            <div class="card sector_cards">
+              <img class="card-img-top my-card-img" src="images/smart_city.jpg" alt="Card image cap">
+              <div class="card-body sector_body">
+                <h3 class="short">Smart City</h3>
+                <p>"In this sector, we're looking for innovative ideas that can make our cities more sustainable,
+                  connected, and efficient. Whether it's developing smart traffic management systems, enhancing public
+                  transportation, or creating solutions for waste management, we're looking for solutions that can
+                  improve
+                  the quality of life for citizens."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Sector Card end -->
+
+
+    <!-- Schedule Cards Start -->
+    <section class="schedule" id="toSchedule">
+      <div class="container">
+        <h1 class="header gradient2">Schedule</h1>
+        <p class="about-text para">"This is where you'll find all the important details about the timeline of Quasar.
+          Our
+          event is designed to be a fun and engaging experience, with a mix of coding, learning, and competition. This
+          schedule has been carefully crafted to provide a seamless and enjoyable experience for all participants.“</p>
+
+
+        <div class="phase_wrapper_one">
+          <!-- Flex = 1; For Equal Card Sizes -->
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Phase 1 </p>
+                <p class="test">Registrations</p>
+              </div>
+              <p class="phase-date">25th Feb - 12th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">Based on the four (4)sectors given to you, the
+                Agriculture/Rural Development, Smart Education, Smart City, and MediTech/BioTech, the participants need
+                to choose a sector and based on that sector, the team to formulate the problem statement and
+                <span id="dots">...</span><span id="more" style="display:none;">the technology solution to the chosen
+                  problem statement. As part of this problem statement and the technology solution, the team has to
+                  prepare a PowerPoint Presentation and submit the same during the process of registration. Once your
+                  registration is
+                  complete, you will receive a mail stating that we have received your registration. After registration,
+                  the participating teams have to submit a video stating the reason of your participation and why you
+                  have chosen this sector and particular problem statement.</span> <span class="gradient2"
+                  onclick="read_more()" id="myBtn">Read more</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Phase 2 </p>
+                <p class="test">Shortlisting</p>
+              </div>
+              <p class="text-center phase-date">13th March - 15th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">We will evaluate your problem statement and solution
+                and after that the participating teams will be given confirmation of your participation on March 18,
+                2023. Means, at this juncture you will officially become a part of Quasar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase_wrapper_one">
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Phase 3 </p>
+                <p class="test">Offline Hackathon starts!</p>
+              </div>
+              <p class="phase-date">25th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">This phase will start with your presence at the venue
+                on March 25, 2023 at 2.00 p.m. To begin with, the judges will look into your problem statement and
+                technology solution to it. The judges will suggest some implementation changes in your stated technology
+                solution. You need to incorporate the changes suggested by the judges into your solution in the next
+                24-hours, means till March 26, 2.00 p.m.
+              </p>
+            </div>
+          </div>
+
+          <div class="col_lg_6 row" style="flex:1">
+            <div class="phase_card card">
+              <div class="phase">
+                <p class="phase-text gradient">&gt; Phase 4 </p>
+                <p class="test">Pitching & Results</p>
+              </div>
+              <p class="text-center phase-date">26th March, 2023</p>
+              <p class="phase-para" style="text-align: justify;">
+                Based on the judges’ perspective and decision, some teams will be shortlisted for the final round. After
+                that, before the jury, problem statement, its technology solution and the implementation will be bound
+                in a business idea. The best teams shortlisted from your business ideas will be declared as winners of
+                the hackathon. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Schedule Cards End -->
+
+    <!-- Sponsers Page -->
+
+    <section class="sponsors" id="toSponsors">
+      <div class="container sponsor_page">
+        <h1 class="header gradient2">Sponsors</h1>
+
+        <p class="about-text para" style="text-align:center">"Through Quasar we have collaborated & partnered with the
+          sponsors under various tiers."</p>
+        <div class="sponsor_wrapper">
+          <!-- Gold-->
+          <div class="gold sponsor_cards">
+            <h3 class="header gradient">Gold Sponsors</h3>
+            <div class="s_images">
+              <a href="https://kohinoor.edu.in/" target="_blank"><img src="images/sponsors/kohinoor.png"
+                  alt="Kohinoor Logo"></a>
+              <a href="https://devfolio.co/" target="_blank"><img src="images/sponsors/devfolio.png"
+                  alt="Devfolio Logo"></a>
+              <a href="https://www.polygon.technology/" target="_blank"><img src="images/sponsors/polygon.png"
+                  alt="Polygon Logo"></a>
+              <a href="https://filecoin.io/" target="_blank"><img src="images/sponsors/filecoin.png"
+                  alt="Filecoin Logo"></a>
+              <a href="https://replit.com/" target="_blank"><img src="images/sponsors/replit.png" alt="Replit Logo"></a>
+              <a href="https://solana.com/" target="_blank"><img src="images/sponsors/solana.png" alt="Solana Logo"></a>
+            </div>
+          </div>
+          <!-- Silver -->
+          <div class="silver sponsor_cards">
+            <h3 class="header gradient">Silver Sponsors</h3>
+            <div class="s_images">
+              <a href="https://www.elearnmarkets.com/" target="_blank"><img src="images/sponsors/elearn.svg"
+                  alt="ElearnMarkets Logo" role="img"></a>
+            </div>
+          </div>
+
+          <!-- Community -->
+          <div class="other sponsor_cards">
+            <h3 class="header gradient">Community Partners</h3>
+            <div class="s_images">
+              <a href="https://www.instagram.com/TheDigiScreen" target="_blank"><img
+                  src="images/sponsors/digiscreen.jpeg" alt="The DigiScreen" role="img"></a>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="other sponsor_cards">
+            <h3 class="header gradient">Social Media Partners</h3>
+            <div class="s_images">
+              <a href="https://indiacollegefest.com/" target="_blank"><img src="images/sponsors/collegefest.jpeg"
+                  alt="India College Fest" role="img"></a>
+              <a href="https://youthincmag.com/" target="_blank"><img src="images/sponsors/youth.png"
+                  alt="Youth Incorporated" role="img"></a>
+            </div>
+          </div>
+
+          <!-- End of Sponsors  -->
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="toContact">
+      <h2 class="header gradient2">Get In Touch</h2>
+      <div class="container contact-page row">
+
+        <div class="col-lg-3">
+          <p class="collab">"Make an impact and showcase your brand at Quasar - Hack the Space, contact us for
+            sponsorship
+            opportunities."</p>
+          <a href="mailto:quasar@pvppcoe.ac.in"><button class="register m-auto">Sponsor</button></a>
+        </div>
+        <div class="poc_wrap col-lg-3">
+          <h3 class="">Points of Contact</h3>
+          <div class="poc one">
+            <p><span class="gradient">Sagar:</span> +91 70395 33733</p>
+            <p><span class="gradient">Vinayak:</span> +91 80808 47775</p>
+          </div>
+        </div>
+        <div class="social col-lg-3">
+          <h3 class="mx-3">Follow us on</h3>
+          <div class="social-links">
+            <a class="sc-icon" href="mailto:quasar@pvppcoe.ac.in"><i class="fa-solid fa-envelope gradient"></i></a>
+
+            <a class="sc-icon" href="https://instagram.com/quasar_vppcoe?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                class="fa-brands fa-instagram gradient"></i></a>
+
+            <a class="sc-icon" href="https://twitter.com/QuasarFest" target="_blank"><i
+                class="fa-brands fa-twitter gradient"></i></a>
+
+            <a class="sc-icon" href="https://discord.gg/PArFf6Xher" target="_blank"><i
+                class="fa-brands fa-discord gradient"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="address container">
+        <a href="https://www.google.com/maps/place/Vasantdada+Patil+Pratishthan's+College+of+Engineering+and+visual+arts/@19.0504457,72.8762404,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c8c7fb7cb41d:0xd2376785df725550!8m2!3d19.0504457!4d72.8784291!16zL20vMDIwdGc2?coh=164777&entry=tt"
+          target="_blank" class="maps">
+          <h3>Our Address <i class="fa-solid fa-map-location-dot gradient"></i></h3>
+        </a>
+        <p>Vasantdada Patil Educational Complex, Eastern Express Highway, Near Everard Nagar, Chunabhatti, Sion(East),
+          Mumbai, Maharashtra 400022
         </p>
-      </div>
-      <div class="card-wrapper row">
-
-        <div class="col-lg-6 sm-12 mycard">
-          <div class="card sector_cards">
-            <img class="card-img-top my-card-img" src="images/edu.jpg" alt="Card image cap">
-            <div class="card-body sector_body">
-              <h3 class="short">Smart Education</h3>
-              <p>“This sector provides an opportunity for you to explore innovative solutions for the education
-                industry, from improving access to quality education for all, to developing cutting-edge educational
-                technologies."</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 sm-12 mycard">
-          <div class="card sector_cards">
-            <img class="card-img-top my-card-img" src="images/agri.png" alt="Card image cap">
-            <div class="card-body sector_body">
-              <h3 class="short">Agriculture/Rural Development</h3>
-              <p>"Whether you're interested in creating tools for better crop management or finding ways to increase
-                access to markets for small-scale farmers, this sector offers a wide range of possibilities for you to
-                showcase your skills and make a positive impact on the world."</p>
-            </div>
-          </div>
-        </div>
 
       </div>
-      <div class="card-wrapper row">
 
-        <div class="col-lg-6 sm-12 mycard">
-          <div class="card sector_cards">
-            <img class="card-img-top my-card-img" src="images/biotech.jpg" alt="Card image cap">
-            <div class="card-body sector_body">
-              <h3 class="short">MediTech/BioTech</h3>
-              <p>“Whether you're interested in using AI for disease diagnosis or creating wearable devices for
-                monitoring health, the possibilities for innovation in this sector are endless."</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 sm-12 mycard">
-          <div class="card sector_cards">
-            <img class="card-img-top my-card-img" src="images/smart_city.jpg" alt="Card image cap">
-            <div class="card-body sector_body">
-              <h3 class="short">Smart City</h3>
-              <p>"In this sector, we're looking for innovative ideas that can make our cities more sustainable,
-                connected, and efficient. Whether it's developing smart traffic management systems, enhancing public
-                transportation, or creating solutions for waste management, we're looking for solutions that can improve
-                the quality of life for citizens."</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- Sector Card end -->
-
-
-  <!-- Schedule Cards Start -->
-  <section class="schedule" id="toSchedule">
-    <div class="container">
-      <h1 class="header gradient2">Schedule</h1>
-      <p class="about-text para">"This is where you'll find all the important details about the timeline of Quasar. Our
-        event is designed to be a fun and engaging experience, with a mix of coding, learning, and competition. This
-        schedule has been carefully crafted to provide a seamless and enjoyable experience for all participants.“</p>
-
-
-      <div class="phase_wrapper_one">
-        <!-- Flex = 1; For Equal Card Sizes -->
-        <div class="col_lg_6 row" style="flex:1">
-          <div class="phase_card card">
-            <div class="phase">
-              <p class="phase-text gradient">&gt; Phase 1 </p>
-              <p class="test">Registrations</p>
-            </div>
-            <p class="phase-date">25th Feb - 12th March, 2023</p>
-            <p class="phase-para" style="text-align: justify;">Based on the four (4)sectors given to you, the Agriculture/Rural Development, Smart Education, Smart City, and MediTech/BioTech, the participants need to choose a sector and based on that sector, the team to formulate the problem statement and
-                <span id="dots">...</span><span id="more" style="display:none;">the technology solution to the chosen problem statement. As part of this problem statement and the technology solution, the team has to prepare a PowerPoint Presentation and submit the same during the process of registration. Once your registration is 
-                complete, you will receive a mail stating that we have received your registration. After registration, the participating teams have to submit a video stating the reason of your participation and why you have chosen this sector and particular problem statement.</span> <span class="gradient2" onclick="read_more()" id="myBtn">Read more</span></p>
-          </div>
-        </div>
-
-        <div class="col_lg_6 row" style="flex:1">
-          <div class="phase_card card">
-            <div class="phase">
-              <p class="phase-text gradient">&gt; Phase 2 </p>
-              <p class="test">Shortlisting</p>
-            </div>
-            <p class="text-center phase-date">13th March - 15th March, 2023</p>
-            <p class="phase-para" style="text-align: justify;">We will evaluate your problem statement and solution and after that the participating teams will be given confirmation of your participation on March 18, 2023. Means, at this juncture you will officially become a part of Quasar.
-</p>
-          </div>
-        </div>
+      <div class="csection_wrapper container" style="width:78%">
+        <p class="">No. of Visitors</p>
+        <p class="visitor gradient" id="visits"></p>
       </div>
 
-      <div class="phase_wrapper_one">
-        <div class="col_lg_6 row" style="flex:1">
-          <div class="phase_card card">
-            <div class="phase">
-              <p class="phase-text gradient">&gt; Phase 3 </p>
-              <p class="test">Offline Hackathon starts!</p>
-            </div>
-            <p class="phase-date">25th March, 2023</p>
-            <p class="phase-para" style="text-align: justify;">This phase will start with your presence at the venue on March 25, 2023 at 2.00 p.m. To begin with, the judges will look into your problem statement and technology solution to it. The judges will suggest some implementation changes in your stated technology solution. You need to incorporate the changes suggested by the judges into your solution in the next 24-hours, means till March 26, 2.00 p.m.
-</p>
-          </div>
-        </div>
+    </section>
 
-        <div class="col_lg_6 row" style="flex:1">
-          <div class="phase_card card">
-            <div class="phase">
-              <p class="phase-text gradient">&gt; Phase 4 </p>
-              <p class="test">Pitching & Results</p>
-            </div>
-            <p class="text-center phase-date">26th March, 2023</p>
-            <p class="phase-para" style="text-align: justify;">
-             Based on the judges’ perspective and decision, some teams will be shortlisted for the final round. After that, before the jury, problem statement, its technology solution and the implementation will be bound in a business idea. The best teams shortlisted from your business ideas will be declared as winners of the hackathon.           </p>
-          </div>
-        </div>
+    <footer class="foot">
+      <div class="container footer">
+        <p>Designed & Developed by <a href="https://www.linkedin.com/in/vinaykumar-pitla-b3931518a" target="_blank"
+            class="gradient">Vinaykumar Pitla</a> & <a href="https://www.linkedin.com/in/anubhav-shukla-425aa8157"
+            target="_blank" class="gradient">Anubhav
+            Shukla</a></p>
       </div>
-
-    </div>
-  </section>
-  <!-- Schedule Cards End -->
-
-  <!-- Sponsers Page -->
-
-  <section class="sponsors" id="toSponsors">
-    <div class="container sponsor_page">
-      <h1 class="header gradient2">Sponsors</h1>
-
-      <p class="about-text para" style="text-align:center">"Through Quasar we have collaborated & partnered with the sponsors under various tiers."</p>
-      <div class="sponsor_wrapper">
-        <!-- Platinum -->
-<!--         <div class="platinum sponsor_cards">
-          <h3 class="header gradient">Platinum Sponsors</h3>
-          <div class="s_images">
-            <img src="/images/ibs.png" alt="IBS Logo" class="sponsor_logo" >
-            <img src="images/coffee.png" alt="Coffeee.io Logo" class="sponsor_logo">
-          </div>
-        </div> -->
-
-
-        <!-- Gold-->
-        <div class="gold sponsor_cards">
-          <h3 class="header gradient">Gold Sponsors</h3>
-          <div class="s_images">
-           <img src="images/sponsors/kohinoor.png" alt="Kohinoor Logo">
-            <img src="images/sponsors/devfolio.png" alt="Devfolio Logo">
-            <img src="images/sponsors/polygon.png" alt="Polygon Logo">
-            <img src="images/sponsors/filecoin.png" alt="Filecoin Logo">
-            <img src="images/sponsors/replit.png" alt="Replit Logo">
-            <img src="images/sponsors/solana.png" alt="Solana Logo">
-          </div>      
-        </div>
-        <!-- Silver -->
-        <div class="silver sponsor_cards">
-          <h3 class="header gradient">Silver Sponsors</h3>
-          <div class="s_images">
-            <img src="images/sponsors/elearn.svg" alt="ElearnMarkets Logo" role="img" >
-          </div> 
-        </div>
-        
-        <div class="other sponsor_cards">
-          <h3 class="header gradient">Community Partners</h3>
-          <div class="s_images">
-            <img src="images/sponsors/digiscreen.jpeg" alt="The DigiScreen"role="img">
-          </div> 
-        </div>
-
-        <div class="other sponsor_cards">
-          <h3 class="header gradient">Social Media Partners</h3>
-          <div class="s_images">
-            <img src="images/sponsors/collegefest.jpeg" alt="India College Fest"role="img" >
-            <img src="images/sponsors/youth.png" alt="Youth Incorporated"role="img" >
-          </div> 
-        </div>
-
-
-
-        <!-- End of Sponsors  -->
-      </div> 
-
-    </div>
-  </section>
-
-
-
-  <!-- Contact Section -->
-  <section class="contact" id="toContact">
-    <h2 class="header gradient2">Get In Touch</h2>
-    <div class="container contact-page row">
-
-      <div class="col-lg-3">
-        <p class="collab">"Make an impact and showcase your brand at Quasar - Hack the Space, contact us for sponsorship
-          opportunities."</p>
-        <a href="mailto:quasar@pvppcoe.ac.in"><button class="register m-auto">Sponsor</button></a>
-      </div>
-      <div class="poc_wrap col-lg-3">
-        <h3 class="">Points of Contact</h3>
-        <div class="poc one">
-          <p><span class="gradient">Sagar:</span> +91 70395 33733</p>
-          <p><span class="gradient">Vinayak:</span> +91 80808 47775</p>
-        </div>
-      </div>
-      <div class="social col-lg-3">
-        <h3 class="mx-3">Follow us on</h3>
-        <div class="social-links">
-          <a class="sc-icon" href="mailto:quasar@pvppcoe.ac.in"><i class="fa-solid fa-envelope gradient"></i></a>
-          
-          <a class="sc-icon" href="https://instagram.com/quasar_vppcoe?igshid=YmMyMTA2M2Y=" target="_blank"><i
-              class="fa-brands fa-instagram gradient"></i></a>
-          
-          <a class="sc-icon" href="https://twitter.com/QuasarFest" target="_blank"><i class="fa-brands fa-twitter gradient"></i></a>
-          
-<!--           <a class="sc-icon" href="#"><i class="fa-brands fa-linkedin gradient"></i></a> -->
-          <a class="sc-icon" href="https://discord.gg/PArFf6Xher" target="_blank"><i class="fa-brands fa-discord gradient"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="address container">
-      <a href="https://www.google.com/maps/place/Vasantdada+Patil+Pratishthan's+College+of+Engineering+and+visual+arts/@19.0504457,72.8762404,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c8c7fb7cb41d:0xd2376785df725550!8m2!3d19.0504457!4d72.8784291!16zL20vMDIwdGc2?coh=164777&entry=tt"
-        target="_blank" class="maps">
-        <h3>Our Address <i class="fa-solid fa-map-location-dot gradient"></i></h3>
-      </a>
-      <p>Vasantdada Patil Educational Complex, Eastern Express Highway, Near Everard Nagar, Chunabhatti, Sion(East),
-        Mumbai, Maharashtra 400022
-      </p>
-
-    </div>
-
-    <div class="csection_wrapper container" style="width:78%">
-      <p class="">No. of Visitors</p>
-      <p class="visitor gradient" id="visits"></p>
-    </div>
-
-  </section>
-
-  <footer class="foot">
-    <div class="container footer">
-      <p>Designed & Developed by <a href="https://www.linkedin.com/in/vinaykumar-pitla-b3931518a" target="_blank" class="gradient">Vinaykumar Pitla</a> & <a href="https://www.linkedin.com/in/anubhav-shukla-425aa8157" target="_blank" class="gradient">Anubhav
-          Shukla</a></p>
-    </div>
-  </footer>
+    </footer>
   </div>
-  
-  <div class="curzr" hidden>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-    <path class="inner" d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z" fill="#F2F5F8" />
-    <path class="outer" d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z" fill="#111920" />
-  </svg>
-</div>
 
-    
-    
+  <div class="curzr" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path class="inner"
+        d="M25,30a5.82,5.82,0,0,1-1.09-.17l-.2-.07-7.36-3.48a.72.72,0,0,0-.35-.08.78.78,0,0,0-.33.07L8.24,29.54a.66.66,0,0,1-.2.06,5.17,5.17,0,0,1-1,.15,3.6,3.6,0,0,1-3.29-5L12.68,4.2a3.59,3.59,0,0,1,6.58,0l9,20.74A3.6,3.6,0,0,1,25,30Z"
+        fill="#F2F5F8" />
+      <path class="outer"
+        d="M16,3A2.59,2.59,0,0,1,18.34,4.6l9,20.74A2.59,2.59,0,0,1,25,29a5.42,5.42,0,0,1-.86-.15l-7.37-3.48a1.84,1.84,0,0,0-.77-.17,1.69,1.69,0,0,0-.73.16l-7.4,3.31a5.89,5.89,0,0,1-.79.12,2.59,2.59,0,0,1-2.37-3.62L13.6,4.6A2.58,2.58,0,0,1,16,3m0-2h0A4.58,4.58,0,0,0,11.76,3.8L2.84,24.33A4.58,4.58,0,0,0,7,30.75a6.08,6.08,0,0,0,1.21-.17,1.87,1.87,0,0,0,.4-.13L16,27.18l7.29,3.44a1.64,1.64,0,0,0,.39.14A6.37,6.37,0,0,0,25,31a4.59,4.59,0,0,0,4.21-6.41l-9-20.75A4.62,4.62,0,0,0,16,1Z"
+        fill="#111920" />
+    </svg>
+  </div>
+
+
+
   <script src="script.js"></script>
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   <script async
     src="https://api.countapi.xyz/hit/quasarfest.vercel.app/13f6d76b-da29-49ce-afec-c3758a855384?callback=websiteVisits"></script>
 

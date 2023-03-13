@@ -38,7 +38,7 @@ var x = setInterval(function () {
         // If the count down is finished, write some text
         if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("clock").innerHTML = "REGISTRATIONS CLOSED!";
+                document.getElementById("clock").innerHTML = "Hackathon is Live!🚀";
         }
 }, 1000);
 

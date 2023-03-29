@@ -532,7 +532,7 @@ content>p {
 
 /* 3. Prizes Styles */
 .prizes {
-    background-color: var(--prizes-color);
+    background-color: #181818;
     padding: 1.5rem 0;
     color: #fff;
 }

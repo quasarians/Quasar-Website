@@ -260,6 +260,14 @@ section#count {
     margin-right: 15%;
 }
 
+/* Hackathon End */
+.time-count{
+    font-size: 1.3rem;
+    margin: 6% 15%;
+    letter-spacing: 1.1px;
+}
+
+
 /*! 768px changed to 780px  */
 @media (max-width:780px) {
 
@@ -507,7 +515,7 @@ content>p {
     ;
     padding: 0.5em 1em;
     text-decoration: none;
-    width: 150px;
+    width: 250px;
     transition: .5s all ease-in-out;
     border: none;
 }

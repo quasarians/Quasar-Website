@@ -557,6 +557,20 @@ content>p {
     padding: 4rem 2rem;
 }
 
+.youtube-embed {
+    position: relative;
+    padding-bottom: 56%;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .youtube-embed iframe {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+  }
+
 /* 3. Sector Card Styles */
 .sectors {
     background-color: var(--sector-color);

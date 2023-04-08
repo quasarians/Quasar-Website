@@ -532,7 +532,7 @@ content>p {
 
 /* 3. Prizes Styles */
 .prizes {
-    background-color: #181818;
+    background-color: var(--prizes-color);
     padding: 1.5rem 0;
     color: #fff;
 }
@@ -552,6 +552,10 @@ content>p {
     margin-top: 1rem;
 }
 
+.recap{
+    background-color: #343434;
+    padding: 4rem 2rem;
+}
 
 /* 3. Sector Card Styles */
 .sectors {

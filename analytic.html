@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .analytics-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .analytics-item {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .analytics-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="prizes" id="toAnnounce">
+        <div class="container prizes-page">
+            <h1 class="header gradient2">Announcements</h1>
+            <div class="prizes-text">
+                <p class="about-text para ">
+                    "We are thrilled to announce that the Quasar Hackathon judging panel has finished evaluating the
+                    submissions, and we cannot wait to unveil the outstanding shortlisted entries and winners!
+                    Our panel reviewed an impressive array of submissions and had a challenging time narrowing down the
+                    best of the best. After much consideration, the panel has identified the top four finalists who
+                    demonstrated exceptional skills, ingenuity, and originality in their projects. We are delighted to
+                    share the following shortlisted entries with you:"
+                </p>
+            </div>
+            <br>
+            <h3 class="header gradient2">Let's Do it again with Quasar 2.0</h3>
+            <div class="row prizes-images">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="event-item">
+                        <img class="img-fluid" src="images/Q2P1.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="event-item">
+                        <img class="img-fluid" src="images/Q2P2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Analytics Section -->
+            <div class="analytics-section" id="analytics-section">
+                <div class="analytics-item">
+                    <h3 class="header gradient2">Registrations</h3>
+                    <div class="analytics-number" id="registrations">0</div>
+                </div>
+                <div class="analytics-item">
+                    <h3 class="header gradient2">Teams</h3>
+                    <div class="analytics-number" id="teams">0</div>
+                </div>
+                <div class="analytics-item">
+                    <h3 class="header gradient2">Colleges</h3>
+                    <div class="analytics-number" id="colleges">0</div>
+                </div>
+                <div class="analytics-item">
+                    <h3 class="header gradient2">Cities</h3>
+                    <div class="analytics-number" id="cities">0</div>
+                </div>
+                <div class="analytics-item">
+                    <h3 class="header gradient2">States</h3>
+                    <div class="analytics-number" id="states">0</div>
+                </div>
+            </div>
+            <!-- Winners -->
+            <h3 class="header gradient2">Last Year Winners</h3>
+            <div class="row prizes-images">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="event-item">
+                        <img class="img-fluid" src="images/edu-winner.png" alt="">
+                        <p class="sub">Team ARgo Learning</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="event-item">
+                        <img class="img-fluid" src="images/agri-winner.png" alt="">
+                        <p class="sub">Coding Rebels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function animateNumbers(targetId, initialValue, finalValue, duration) {
+            let current = initialValue;
+            const increment = (finalValue - initialValue) / duration;
+            const targetElement = document.getElementById(targetId);
+
+            function updateNumber() {
+                current += increment;
+                targetElement.textContent = `+${Math.round(current)}`;
+
+                if (current < finalValue) {
+                    requestAnimationFrame(updateNumber);
+                }
+            }
+
+            updateNumber();
+        }
+
+        function startAnimationOnScroll() {
+            const analyticsSection = document.getElementById('analytics-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        animateNumbers('registrations', 0, 1000, 200);
+                        animateNumbers('teams', 0, 333, 200);
+                        animateNumbers('colleges', 0, 65, 200);
+                        animateNumbers('cities', 0, 20, 200);
+                        animateNumbers('states', 0, 10, 200);
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            observer.observe(analyticsSection);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            startAnimationOnScroll();
+        });
+    </script>
+</body>
+
+</html>

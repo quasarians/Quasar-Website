@@ -12,7 +12,7 @@ ham.addEventListener('click', () => {
 //Clock js
 // the clock timer start 
 // Set the date we're counting down to
-var countDownDate = new Date("March 25, 2023 13:59:59").getTime();
+var countDownDate = new Date("March 16, 2024 13:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -223,7 +223,7 @@ window.onload = function () {
   setTimeout(function () {
     // animations
     document.getElementById("block1").style =
-      "animation:fade 1500ms ease-in-out;";
+      "animation:fade 3000ms ease-in-out;";
 
     document.getElementById("block2").style =
       "animation:fade1 1500ms ease-in-out ;animation-delay:1000ms";
@@ -235,6 +235,8 @@ window.onload = function () {
     }, 1400);
   }, 1500);
 };
+
+window.onload();
 
 // Read More
 function read_more() {
@@ -253,5 +255,43 @@ function read_more() {
   }
 }
 
+//Analysis Q1
 
+function animateNumbers(targetId, initialValue, finalValue, duration) {
+  let current = initialValue;
+  const increment = (finalValue - initialValue) / duration;
+  const targetElement = document.getElementById(targetId);
 
+  function updateNumber() {
+      current += increment;
+      targetElement.textContent = `${Math.round(current)}+`;
+
+      if (current < finalValue) {
+          requestAnimationFrame(updateNumber);
+      }
+  }
+
+  updateNumber();
+}
+
+function startAnimationOnScroll() {
+  const analyticsSection = document.getElementById('analytics-section');
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              animateNumbers('registrations', 0, 1000, 100);
+              animateNumbers('teams', 0, 333, 100);
+              animateNumbers('colleges', 0, 65, 100);
+              animateNumbers('cities', 0, 20, 100);
+              animateNumbers('states', 0, 10, 100);
+              observer.disconnect();
+          }
+      });
+  });
+
+  observer.observe(analyticsSection);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  startAnimationOnScroll();
+});

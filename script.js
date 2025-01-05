@@ -12,7 +12,7 @@ ham.addEventListener('click', () => {
 //Clock js
 // the clock timer start 
 // Set the date we're counting down to
-var countDownDate = new Date("March 16, 2024 13:59:59").getTime();
+var countDownDate = new Date("March 8, 2025 13:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {

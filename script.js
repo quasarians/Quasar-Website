@@ -12,7 +12,7 @@ ham.addEventListener('click', () => {
 //Clock js
 // the clock timer start 
 // Set the date we're counting down to
-var countDownDate = new Date("March 8, 2025 13:59:59").getTime();
+var countDownDate = new Date(" 24 january, 2026 13:59:59").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -279,11 +279,11 @@ function startAnimationOnScroll() {
   const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
-              animateNumbers('registrations', 0, 1100, 100);
-              animateNumbers('teams', 0, 470, 100);
-              animateNumbers('colleges', 0, 72, 100);
-              animateNumbers('cities', 0, 80, 100);
-              animateNumbers('states', 0, 15, 100);
+              animateNumbers('registrations', 0, 1000, 100);
+              animateNumbers('teams', 0, 400, 100);
+              animateNumbers('colleges', 0, 74, 100);
+              animateNumbers('cities', 0, 45, 100);
+              animateNumbers('states', 0, 14, 100);
               observer.disconnect();
           }
       });

@@ -279,7 +279,7 @@ function startAnimationOnScroll() {
   const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
-              animateNumbers('registrations', 0, 1000, 100);
+              animateNumbers('registrations', 0, 2000, 100);
               animateNumbers('teams', 0, 400, 100);
               animateNumbers('colleges', 0, 74, 100);
               animateNumbers('cities', 0, 45, 100);
